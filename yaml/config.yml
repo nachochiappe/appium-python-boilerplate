@@ -1,0 +1,26 @@
+platform: &platform
+  platform: android
+
+device_config: &device_config
+  ios:
+    platformName: 'ios'
+    platformVersion: '14'
+    deviceName: 'iPhone 13'
+    automationName: 'XCUITest'
+    appPackage: ''
+    appActivity: ''
+    noReset: 'True'
+    folder: ''
+  android:
+    platformName: 'android'
+    platformVersion: '11.0'
+    deviceName: 'Pixel 2 API 30'
+    automationName: 'UiAutomator2'
+    appPackage: ''
+    appActivity: ''
+    noReset: 'True'
+    folder: ''
+
+testing:
+  <<: *platform
+  <<: *device_config
